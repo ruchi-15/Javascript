@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> for loop</title>
+</head>
+<body>
+<input type="text" id="table">
+<button onclick="printTable()">print</button>
+<script type="text/javascript">
+function printTable(){
+var num=parseInt(document.getElementById('table').value);
+
+for(i=10; i>=1; i--){
+var result=i*num;
+console.log(i);
+if(i==5){
+break;
+}
+}
+}
+</script>
+</body>
+</html>
