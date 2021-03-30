@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> alert box  </title>
+</head>
+<body>
+<button onclick="alert('i am alert')"> alert </button>
+<button onclick="confirm('i am confirm box')"> confirm </button> 
+<button onclick="promptExample()"> prompt</button>
+<script type="text/javascript">
+function promptexample(){
+var txt;
+var person=prompt("please enter our name:","Harry potter");
+if (person ==null|| person==""){
+txt="user cancelled the prompt.";
+} else {
+txt ="Hello"+ person + "!how are you today?";
+}
+document.getElementById("demo").innerHTML=txt;
+   // body...
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>
+
