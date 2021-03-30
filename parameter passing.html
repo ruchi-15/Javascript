@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> parameter passing </title>
+</head>
+<body>
+<input type="text" id="num1">
+<input type="text" id="num2">
+<button onclick="sum(10,20)"> value</button>
+
+<ul> 
+<li>pass by value</li>
+<p id="pass"></p>
+<li>pass by reference</li>
+<p id="reference"></p>
+</ul>
+<script type="text/javascript">
+result=20;
+function sum(a,b){
+person={name:"ruchi", class:"Mca"}//object
+var result=a+b;
+console.log(result+"local for sum");
+console.log(reference(person));
+
+} //call by value
+function reference(person){
+console.log(result+"local for reference");
+return person.name;
+}//call by object
+console.log(result+"global");
+</script>
+</body>
+</html>
